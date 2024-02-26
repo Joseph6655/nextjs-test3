@@ -6,7 +6,7 @@ const Banner = () => {
     <section id="banner">
       <div className="banner-item">
         <div className="image-container">
-          <img src="/background.jpg" alt="Background" />
+          <img src="/banner.png" alt="Background" />
           <div className="card-content">
             <h2>Welcome to creoshift</h2>
             

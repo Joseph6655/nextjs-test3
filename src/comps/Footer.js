@@ -20,19 +20,20 @@ const Footer = () => {
           </ul>
         </div>
         <div className="social-icons">
-          <Link href="https://www.Facebook.com"
-             className="Facebook-icon">
-              <img src="/facebooklogo.png" alt="Facebook" />
-            
-          </Link>
-          <Link href="https://www.Whatsup.com"
+           <Link href="https://www.Whatsup.com"
             className="whats-up-icon">
-              <img src="/whatsuplogo.png" alt="WhatsApp" />
+              <img src="/wtslogo1.jpg" alt="WhatsApp" />
            
           </Link>
+          <Link href="https://www.Facebook.com"
+             className="Facebook-icon">
+              <img src="/fb1.png" alt="Facebook" />
+            
+          </Link>
+          
           <Link href="https://www.Instagram.com"
              className="Instagram-icon">
-              <img src="/instagramlogo.jpg" alt="Instagram" />
+              <img src="/insta1.jpg" alt="Instagram" />
            
           </Link>
         </div>

@@ -9,7 +9,7 @@ const Navbar = () => {
           <img src="/creoshiftlogo.jpg"/>
           </div>
       <ul className="navList">
-        <li className="navItem"><Link href="/" className="navLink">Hooooooooome</Link>
+        <li className="navItem"><Link href="/" className="navLink">Home</Link>
         </li>
         <li className="navItem"><Link href="/about"className="navLink">About</Link>
         </li>
