@@ -4,11 +4,11 @@ const SectionImage = () => {
   return (
     <section className="section-image">
       <div className="image-container">
-        <img src="fone.jpg"  />
+        <img src="desk.png"  />
       </div>
       <div className="section-image">
       <div className="image-container">
-        <img src="dev.jpg"  />
+        <img src="comp.png"  />
         </div>
         
         
