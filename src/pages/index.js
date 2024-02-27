@@ -3,6 +3,7 @@ import Banner from '@/comps/Banner'
 import Navbar from '@/comps/Navbar'
 import Footer from '@/comps/Footer'
 import SectionImage from '@/comps/SectionImage'
+import Form from '@/comps/Form'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         
        </Head>
        <Banner/>
+       <Form/>
        <SectionImage/>
        <Footer/>
       
