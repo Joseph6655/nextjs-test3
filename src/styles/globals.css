@@ -284,6 +284,15 @@ footer {
   footer {
     flex-direction: column;
     padding: 10px;
+    bottom: 0; 
+    width: 100%; 
+    background-color: rgb(8, 8, 8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 100;
   }
 
   .footer-all {
