@@ -56,10 +56,12 @@ main {
 .form {
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 label {
@@ -87,6 +89,7 @@ button {
   border-radius: 4px;
   padding: 10px 20px;
   cursor: pointer;
+  margin-top: 30px;
 
 }
 .button-container {
@@ -134,10 +137,10 @@ button:hover {
 }
 
 .section-image .image-container {
-  margin: auto; 
+  margin: 20px; 
   position: relative;
   max-width: 1500px;
-  margin-bottom: 0; /* Add this line to remove the space between images */
+  margin-bottom: 0; 
 }
 
 .section-image .image-container img {

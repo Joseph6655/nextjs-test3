@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="image-container">
           <img src="/banner.png" alt="Background" />
           <div className="card-content">
-            <h2>Welcome to creoshift</h2>
+            <h2>Welcome to Home page </h2>
             
             <Link href="/page">
             </Link>
