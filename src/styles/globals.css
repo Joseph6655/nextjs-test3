@@ -58,6 +58,9 @@ main {
   margin: 0 auto;
   margin-top: 50px;
 }
+.title{
+  margin-left: 20%;
+}
 
 .form-group {
   margin-bottom: 0px;
@@ -78,9 +81,7 @@ textarea {
   border-radius: 4px;
 }
 
-textarea {
-  resize: vertical;
-}
+
 
 button {
   background-color: #007bff;
@@ -273,12 +274,13 @@ footer {
 
   .section-image .image-container img {
     height: 350px;
-    width: 500px;
+    width: 450px;
   }
 
   .section-image .card-content {
     top: 30%;
     font-size: 1em;
+    max-inline-size: 450px;
   }
 
   footer {
@@ -300,9 +302,11 @@ footer {
   }
 
   .footer-links ul {
+    margin-top: 15px;
     flex-direction: column;
     margin-left: 24px;
     margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .social-icons {
