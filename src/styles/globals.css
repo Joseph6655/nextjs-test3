@@ -365,13 +365,7 @@ footer {
   .social-icons {
     justify-content: center;
   }
-}
 
-
-
-
-
-@media (max-width: 768px) {
   .burger-button {
     display: block;
     margin-right: 20px;
@@ -402,7 +396,7 @@ footer {
 
   .navLink {
     color: #fcf3f3;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
