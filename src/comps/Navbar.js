@@ -21,19 +21,13 @@ const Navbar = () => {
         </button>
         <ul className={`navList ${isOpen ? 'showNav' : ''}`}>
           <li className="navItem">
-            <Link href="/" className="navLink">
-              Home
-            </Link>
+            <Link href="/" className="navLink"> Home</Link>
           </li>
           <li className="navItem">
-            <Link href="/about" className="navLink">
-              About
-            </Link>
+            <Link href="/about" className="navLink"> About </Link>
           </li>
           <li className="navItem">
-            <Link href="/contact" className="navLink">
-              Contact
-            </Link>
+            <Link href="/contact" className="navLink">Contact</Link>
           </li>
         </ul>
       </div>
