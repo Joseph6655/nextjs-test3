@@ -120,7 +120,7 @@ button:hover {
 #banner {
   margin-top: 50px;
   min-height: 100vh;
-  display: contents;
+  display: contents;;
   
   align-items: center;
 }
@@ -383,6 +383,7 @@ footer {
     justify-content: center;
   }
 
+  
   .burger-button {
     display: flex;
     flex-direction: column;
@@ -393,38 +394,45 @@ footer {
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 10;
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index: 1000;
   }
 
   .burger-line {
     width: 30px;
     height: 2px;
-    background: #eeebeb; /* Change color of burger lines */
+    background: #eeebeb; 
+    z-index: 1000;
+  }
+
+  .open .burger-line {
+    background: transparent; /* Hide burger lines when menu is open */
   }
 
   .navList {
-    display: flex;
+    display: none;
+    top: 15%;
     flex-direction: column;
     align-items: center;
     list-style-type: none;
     padding: 0;
-    margin-left:20%;
-   
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-100%);
-   
+    right: -50px;
+    background-color: #000;
+    position: absolute;
+    z-index: 1000;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust width as needed */
   }
 
-  .navList.showNav {
-    transform: translateY(0);
+  .showNav {
+    display: flex; /* Show nav list when .showNav is applied */
   }
 
   .navItem {
-    padding: 0.2rem 0;
+    padding: 1rem 0;
     text-align: center;
   }
 
