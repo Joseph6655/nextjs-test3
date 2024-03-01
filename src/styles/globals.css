@@ -266,13 +266,14 @@ footer {
 
 .burger-line {
   width: 32px;
+
   height: 4px;
   background-color: #fff;
   position: absolute;
   left: 0;
   top: 50%;
   margin-right: 50px;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
@@ -284,23 +285,19 @@ footer {
   bottom: 0;
 }
 
-.burger-button.active .burger-line:nth-child(1) {
-  transform: translateY(-50%) rotate(45deg);
-}
 
-.burger-button.active .burger-line:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-button.active .burger-line:nth-child(3) {
-  transform: translateY(-50%) rotate(-45deg);
-}
 
 
 @media screen and (max-width: 1200px) {
   .navbar {
     flex-direction: column;
     align-items: center;
+  }
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
   }
   .logo{
     margin-left: 20px;
@@ -387,44 +384,63 @@ footer {
   }
 
   .burger-button {
-    display: block;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .burger-line {
+    width: 30px;
+    height: 2px;
+    background: #eeebeb; /* Change color of burger lines */
   }
 
   .navList {
-    position: fixed;
-    top: 0;
-    left: 45%;
-    width: 100%;
-    height: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style-type: none;
     padding: 0;
-    margin-left: 320px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+    margin-left:20%;
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+   
   }
 
   .navList.showNav {
     transform: translateY(0);
-    position: fixed;
   }
 
   .navItem {
-    padding: 1rem 0;
+    padding: 0.2rem 0;
     text-align: center;
-
   }
 
   .navLink {
-    color: #fcf3f3;
+    color: #fff; /* Change color of nav links */
+    text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.3s ease;
   }
 
   .navLink:hover {
     color: #007bff;
+
+
+  
   }
 }
 
