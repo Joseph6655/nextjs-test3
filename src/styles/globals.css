@@ -303,13 +303,16 @@ footer {
     padding: 1rem;
   }
   .logo{
-    margin-left: 0px;
+    margin-left: -6px;
   }
    
 
   .form {
     max-width: 90%;
   }
+  .title{
+  margin-right: 20%;
+}
 
   #banner {
     height: 150px;
@@ -334,6 +337,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    margin-right: 5%;
     
   }
 
@@ -404,7 +408,7 @@ footer {
     position: absolute;
     top: 4%;
     transform: translateY(-50%);
-    right: 10px;
+    right: 15px;
     z-index: 1000;
   }
 
@@ -421,7 +425,7 @@ footer {
 
   .navList {
     display: none;
-    top: 11%;
+    top: 9%;
     flex-direction: column;
    
     list-style-type: none;
