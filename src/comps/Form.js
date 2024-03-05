@@ -1,23 +1,24 @@
-import React from 'react'
+import React from 'react';
 
 const Form = () => {
   return (
-    <form className="form">
-     <div className="title"><h2>Enter your information here </h2></div>
-      <div className="form-group">
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="  Enter your name" />
+    <form className="form max-w-md mx-auto">
+      <div className="title text-center mb-4"><h2 className="font-bold">Enter your information here:</h2></div>
+      <div className="form-group mb-4">
+        <label htmlFor="name" className="block">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" className="w-full border rounded-md py-2 px-3" />
       </div>
-      <div className="form-group">
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="  Enter your email" />
+      <div className="form-group mb-4">
+        <label htmlFor="email" className="block">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" className="w-full border rounded-md py-2 px-3" />
       </div>
-      <div className="form-group">
-        <label htmlFor="message">Message:</label>
-        <input type="text" id="name" name="name" placeholder="  Enter your message" />
+      <div className="form-group mb-4">
+        <label htmlFor="message" className="block">Message:</label>
+        <input type="text" id="message" name="message" placeholder="Enter your message" className="w-full border rounded-md py-2 px-3" />
       </div>
-      <div className="button-container">
-      <button type="submit">Submit</button></div>
+      <div className="button-container text-center">
+        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+      </div>
     </form>
   );
 };
