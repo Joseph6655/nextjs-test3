@@ -3,7 +3,7 @@ import React from 'react';
 const Form = () => {
   return (
     <form className="form max-w-md mx-auto">
-      <div className="title text-center mb-4"><h2 className="font-bold">Enter your information here:</h2></div>
+      <div className="title text-center mb-2"><h2 className="font-bold">Enter your information here  </h2></div>
       <div className="form-group mb-4">
         <label htmlFor="name" className="block">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" className="w-full border rounded-md py-2 px-3" />

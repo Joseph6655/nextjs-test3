@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-gray-800">
-      <div className="footer-all">
+      <div className="footer-all mx-auto flex">
         <div className="nav-content container mx-auto flex justify-between">
           <div className="logo">
             <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />

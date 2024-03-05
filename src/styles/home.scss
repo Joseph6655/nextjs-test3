@@ -318,7 +318,7 @@ footer {
     max-width: 90%;
   }
   .title{
-  margin-right: 20%;
+  margin-right: 30%;
   text-align: center;
 }
 
@@ -428,7 +428,7 @@ footer {
   }
 
   .open .burger-line {
-    background: transparent; /* Hide burger lines when menu is open */
+    background: transparent; 
   }
 
   .navList {
@@ -449,7 +449,7 @@ footer {
   }
 
   .showNav {
-    display: flex; /* Show nav list when .showNav is applied */
+    display: flex; 
   }
 
   .navItem {
