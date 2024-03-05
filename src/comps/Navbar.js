@@ -10,24 +10,24 @@ const Navbar = () => {
 
   return (
     <nav className="navbar bg-gray-800">
-      <div className="nav-content container mx-auto flex justify-between">
-        <div className="logo">
-          <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />
-        </div>
-        <button className="burger-button md:hidden" onClick={toggleNav}>
+    <div className="nav-content container mx-auto flex justify-between">
+      <div className="logo">
+        <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />
+      </div>
+        <button className="burger-button" onClick={toggleNav}>
           <div className="burger-line"></div>
           <div className="burger-line"></div>
           <div className="burger-line"></div>
         </button>
-        <ul className={`navList md:flex md:space-x-4 ${isOpen ? 'block' : 'hidden'}`}>
+        <ul className={`navList ${isOpen ? 'showNav' : ''}`}>
           <li className="navItem">
-            <Link href="/" className="navLink text-white">Home</Link>
+            <Link href="/" className="navLink"> Home</Link>
           </li>
           <li className="navItem">
-            <Link href="/about" className="navLink text-white">About</Link>
+            <Link href="/about" className="navLink"> About </Link>
           </li>
           <li className="navItem">
-            <Link href="/contact" className="navLink text-white">Contact</Link>
+            <Link href="/contact" className="navLink">Contact</Link>
           </li>
         </ul>
       </div>
