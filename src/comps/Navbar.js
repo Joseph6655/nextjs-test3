@@ -14,13 +14,9 @@ const Navbar = () => {
       <div className="logo ml-2 p-2">
         <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />
       </div>
-        <button className="burger-button mt-6" onClick={toggleNav}>
-          <div className="burger-line"></div>
-          <div className="burger-line"></div>
-          <div className="burger-line"></div>
-        </button>
+        
         <ul className={`navList flex mr-2 p-6 ${isOpen ? 'showNav  mr-5 flex' : ''}`}>
-          <li className="navItem mr-4 md:ml-10">
+          <li className="navItem mr-4 ">
             <Link href="/" className="navLink text-white"> Home</Link>
           </li>
           <li className="navItem mr-4">

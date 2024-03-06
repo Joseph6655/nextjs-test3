@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className="bg-black">
       <div className="footer-all mx-auto">
-        <div className="nav-content container mx-auto flex flex-col md:flex-row justify-between">
+        <div className="nav-content container mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="logo p-2 flex justify-center md:justify-start">
             <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />
           </div>
-          <div className="footer-links flex flex-col mt-4 md:flex-row justify-center md:justify-start p-2">
+          <div className="footer-links flex flex-col md:flex-row justify-center items-center p-2">
             <Link href="/" className="text-white mx-4">Home</Link>
             <Link href="/about" className="text-white mx-4">About</Link>
             <Link href="/contact" className="text-white mx-4">Contact</Link>
