@@ -15,7 +15,7 @@ const Navbar = () => {
         <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />
       </div>
         
-        <ul className={`navList flex mr-2 p-6 ${isOpen ? 'showNav  mr-5 flex' : ''}`}>
+        <ul className={`navList flex  p-6 `}>
           <li className="navItem mr-4 ">
             <Link href="/" className="navLink text-white"> Home</Link>
           </li>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = () => {
   return (
-    <form className="form max-w-md mx-auto">
+    <form className="form max-w-md mx-auto ">
       <div className="title text-center mb-2 text-3xl">
         <h2 className="font-bold mt-11 md:ml-4 lg:ml-0">Enter your information here</h2>
       </div>
