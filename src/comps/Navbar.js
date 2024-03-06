@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNav = () => {
-    setIsOpen(!isOpen);
-  };
+  
 
   return (
     <nav className="navbar bg-black">
