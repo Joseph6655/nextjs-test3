@@ -3,17 +3,18 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800">
-      <div className="footer-all mx-auto flex">
-        <div className="nav-content container mx-auto flex justify-between">
-          <div className="logo">
+    <footer className="bg-black">
+      <div className="footer-all mx-auto">
+        <div className="nav-content container mx-auto flex flex-col md:flex-row justify-between">
+          <div className="logo p-2 flex justify-center md:justify-start">
             <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />
           </div>
-          <div className="footer-links flex justify-center mx-2">
-               <Link href="/" className="text-white mx-4">Home </Link>
-               <Link href="/about" className="text-white mx-4">About </Link>
-               <Link href="/contact" className="text-white mx-4">Contact</Link></div>
-          <div className="social-icons flex justify-end space-x-4">
+          <div className="footer-links flex flex-col mt-4 md:flex-row justify-center md:justify-start p-2">
+            <Link href="/" className="text-white mx-4">Home</Link>
+            <Link href="/about" className="text-white mx-4">About</Link>
+            <Link href="/contact" className="text-white mx-4">Contact</Link>
+          </div>
+          <div className="social-icons flex justify-center mt-4 md:justify-end space-x-3 p-1"> 
             <Link href="https://www.Whatsup.com" className="whats-up-icon">
               <img src="/wtslogo1.jpg" alt="WhatsApp" className="h-6" />
             </Link>
