@@ -14,7 +14,7 @@ export default function Home() {
          <title> Home page</title>
         
        </Head>
-       <Banner/>
+       <Banner imageSource="/banner.png"  cardContent="Welcome to Home page"  />
        <Form/>
        <SectionImage/>
        <Footer/>
