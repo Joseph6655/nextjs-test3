@@ -13,7 +13,7 @@ const ContactPage = () => {
     <Head>
       <title> Contact page</title>
     </Head>
-    <Banner imageSource="/contact.png"  cardContent="Welcome to Contact page" textColor="text-black-500" />
+    <Banner imageSource="/contact.png"  cardContent="Welcome to Contact page"/>
     <Form/>
     <SectionImage/>
     <Footer/>
