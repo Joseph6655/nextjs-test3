@@ -8,17 +8,14 @@ import SectionImage from '@/comps/SectionImage'
 const AboutPage = () => {
   return (
     <div>
-    <Navbar/>
-    <Head>
+      <Navbar/>
+      <Head>
       <title>About page</title>
-     
-    </Head>
-    <Banner imageSource="/about.png"   cardContent="Welcome to About page"/>
-    
-    <SectionImage/>
-    <Footer/>
-   
-   </div>
+      </Head>
+      <Banner imageSource="/about.png"   cardContent="Welcome to About page " textColor="text-blue-500"/>
+      <SectionImage/>
+      <Footer/>
+    </div>
   );
 };
 
