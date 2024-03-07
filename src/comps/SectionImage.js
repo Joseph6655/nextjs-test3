@@ -10,7 +10,7 @@ const SectionImage = () => {
             Great web design without functionality like a sports car with no engine.
           </div>
         </div>
-        <div className="image-container mx-6 md:w-80 mb-5 relative">
+        <div className="image-container mx-6 mb-6 md:mb-4 md:w-80 relative">
           <img src="comp.png" alt="Computer" />
           <div className="card-content absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-5 text-white text-center">
             Computers are like Old Testament gods; lots of rules and no mercy.

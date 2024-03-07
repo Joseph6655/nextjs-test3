@@ -5,13 +5,13 @@ const Navbar = () => {
   
 
   return (
-    <nav className="navbar bg-black">
-    <div className="nav-content container  max-w-50 mx-auto flex justify-between bg-black ">
-      <div className="logo ml-2 p-2">
+    <nav className="navbar bg-black items-centre mx-auto p-5">
+    <div className="nav-content container flex justify-between bg-black mx-auto ">
+      <div className="logo ml-2">
         <img src="/creoshiftlogo.jpg" alt="Logo" className="h-12" />
       </div>
         
-        <ul className={`navList flex  p-6 `}>
+        <ul className={`navList flex mt-2`}>
           <li className="navItem mr-4 ">
             <Link href="/" className="navLink text-white"> Home</Link>
           </li>

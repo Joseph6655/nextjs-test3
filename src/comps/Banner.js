@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
   return (
     <section id="banner" className="py-16 bg-gray-100">
-      <div className="container mx-auto">
+      <div className="content">
         <div className="banner-item relative">
           <div className="image-container relative w-full">
             <img src="/banner.png" alt="Background" className="w-full h-auto" />
