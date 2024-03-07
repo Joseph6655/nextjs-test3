@@ -4,7 +4,6 @@ import Banner from '@/comps/Banner'
 import Navbar from '@/comps/Navbar'
 import Footer from '@/comps/Footer'
 import SectionImage from '@/comps/SectionImage'
-import Form from '@/comps/Form'
 
 const AboutPage = () => {
   return (
@@ -14,8 +13,8 @@ const AboutPage = () => {
       <title>About page</title>
      
     </Head>
-    <Banner imageSource="/about.png"  cardContent="Welcome to About page"/>
-    <Form/>
+    <Banner imageSource="/about.png"   cardContent="Welcome to About page"/>
+    
     <SectionImage/>
     <Footer/>
    
