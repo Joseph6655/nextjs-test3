@@ -21,7 +21,7 @@ const ContactPage = () => {
       </Head>
       <Banner imageSource="/contact.png" cardContent="Welcome to Contact page" />
       <Form/>
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 ml-20 mr-20 md:grid-cols-2 gap-0 justify-center" style={{ width: '45em', margin: '0 auto'}}  >
         {imagesData.map((data, index) => (
           <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
         ))}
