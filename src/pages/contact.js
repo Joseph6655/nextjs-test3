@@ -21,9 +21,11 @@ const ContactPage = () => {
       </Head>
       <Banner imageSource="/contact.png" cardContent="Welcome to Contact page" />
       <Form/>
-      {imagesData.map((data, index) => (
-        <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
-      ))}
+      <div className="flex flex-wrap justify-center">
+        {imagesData.map((data, index) => (
+          <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
+        ))}
+      </div>
       
       <Footer/>
     </div>

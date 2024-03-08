@@ -20,9 +20,11 @@ const AboutPage = () => {
         <title>About page</title>
       </Head>
       <Banner imageSource="/about.png" cardContent="Welcome to About page" textColor="text-blue-500"/>
-      {imagesData.map((data, index) => (
-        <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
-      ))}
+      <div className="flex flex-wrap justify-center">
+        {imagesData.map((data, index) => (
+          <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
+        ))}
+      </div>
       <Footer/>
     </div>
   );

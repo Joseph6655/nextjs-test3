@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Banner from '@/comps/Banner';
 import Navbar from '@/comps/Navbar';
 import Footer from '@/comps/Footer';
+import Form from '@/comps/Form';
 import SectionImage from '@/comps/SectionImage';
 
 const HomePage = () => {
@@ -18,9 +19,13 @@ const HomePage = () => {
         <title>Home page</title>
       </Head>
       <Banner imageSource="/banner.png" cardContent="Welcome to Home page" />
-      {imagesData.map((data, index) => (
-        <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
-      ))}
+      <Form/>
+      <div className="flex flex-wrap justify-center">
+        {imagesData.map((data, index) => (
+          <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
+        ))}
+      </div>
+     
       <Footer/>
     </div>
   );
