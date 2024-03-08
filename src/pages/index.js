@@ -20,11 +20,12 @@ const HomePage = () => {
       </Head>
       <Banner imageSource="/banner.png" cardContent="Welcome to Home page" />
       <Form/>
-      <div className="grid grid-cols-1 md:grid-cols-2  justify-center">
+      <div className="grid grid-cols-1 ml-20 mr-20  md:grid-cols-2 gap-0 justify-center">
         {imagesData.map((data, index) => (
           <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
         ))}
       </div>
+     
       <Footer/>
     </div>
   );
