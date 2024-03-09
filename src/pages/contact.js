@@ -8,7 +8,8 @@ import Form from '@/comps/Form';
 
 const ContactPage = () => {
   const imagesData = [
-    { imageSource: '/contactus1.jpg' , cardContent: 'You have within you, right now, everything you need to deal with whatever the world can throw at you.' },
+    { imageSource: '/contactus1.jpg' , cardContent: 'You have within you, right now, everything you need to deal with whatever.' },
+    { imageSource: '/contact3.png' , cardContent: 'we have lost contact with reality the simplicity of life.' }
    
 
   ];
@@ -21,11 +22,11 @@ const ContactPage = () => {
       </Head>
       <Banner imageSource="/contact.png" cardContent="Welcome to Contact page" />
       <Form/>
-      <div className="grid grid-cols-1 ml-20 mr-20 md:grid-cols-2 gap-0 justify-center" style={{ width: '45em', margin: '0 auto'}}  >
-        {imagesData.map((data, index) => (
-          <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} />
-        ))}
-      </div>
+      <div className="grid grid-cols-1 ml-20 mr-20 md:grid-cols-2 gap-0 md:w-1/2 justify-center md: " style={{margin: '0 auto'}}>
+  {imagesData.map((data, index) => (
+    <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} className="w-full max-w-sm mx-auto" />
+  ))}
+</div>
       
       <Footer/>
     </div>
