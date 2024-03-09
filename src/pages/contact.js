@@ -9,7 +9,7 @@ import Form from '@/comps/Form';
 const ContactPage = () => {
   const imagesData = [
     { imageSource: '/contactus1.jpg' , cardContent: 'You have within you, right now, everything you need to deal with whatever.' },
-    { imageSource: '/contact3.png' , cardContent: 'we have lost contact with reality the simplicity of life.' }
+    { imageSource: '/contact4.jpg' , cardContent: 'we have lost contact with reality the simplicity of life.' }
    
 
   ];
