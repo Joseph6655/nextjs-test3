@@ -5,6 +5,7 @@ import Navbar from '@/comps/Navbar';
 import Footer from '@/comps/Footer';
 import Form from '@/comps/Form';
 import SectionImage from '@/comps/SectionImage';
+import Sectionradiobutton from '@/comps/Sectionradiobutton';
 
 const HomePage = () => {
   const imagesData = [
@@ -21,11 +22,12 @@ const HomePage = () => {
       <Banner imageSource="/banner.png" cardContent="Welcome to Home page" />
       <Form/> 
      
-      <div className="grid grid-cols-1 ml-20 mr-20 md:grid-cols-2 gap-0 md:w-1/2 justify-center "style={{margin: '0 auto'}}>
-       {imagesData.map((data, index) => (
-        <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} className="w-full max-w-sm mx-auto" />
+      <div className="grid grid-cols-1 ml-20 mr-20 md:grid-cols-2 gap-0 md:w-1/2 justify-center" style={{ margin: '0 auto' }}>
+        {imagesData.map((data, index) => (
+          <SectionImage key={index} imageSource={data.imageSource} cardContent={data.cardContent} className="w-full max-w-sm mx-auto" />
         ))}
-     </div>
+      </div>
+      <Sectionradiobutton/>
       <Footer/>
     </div>
   );
