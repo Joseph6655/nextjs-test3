@@ -19,10 +19,14 @@ const Filtercompenent = () => {
   };
 
   const handleTitleClick = (title) => {
-    setSearchTerm(title.toLowerCase());
-    setShowOptions(false);
-    const filtered = imageData.filter(image => image.title.toLowerCase().includes(title.toLowerCase()));
-    setFilteredImages(filtered);
+    if (title === 'All') {
+      setFilteredImages(imageData);
+    } else {
+      setSearchTerm(title.toLowerCase());
+      setShowOptions(false);
+      const filtered = imageData.filter(image => image.title.toLowerCase().includes(title.toLowerCase()));
+      setFilteredImages(filtered);
+    }
   };
 
   const handleInputFocus = () => {
@@ -48,8 +52,14 @@ const Filtercompenent = () => {
         />
       </div>
       {showOptions && (
-        <div className="flex justify-center mb-2"> 
+        <div className="flex justify-center mb-2">
           <div className="border border-gray-300 rounded bg-white" style={{ width: '300px' }}>
+            <div
+              className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+              onClick={() => handleTitleClick('All')}
+            >
+              All
+            </div>
             {imageData.map((image) => (
               <div
                 key={image.id}
@@ -65,8 +75,10 @@ const Filtercompenent = () => {
       <div className="grid grid-cols-3 gap-4">
         {filteredImages.map(image => (
           <div key={image.id} className="text-center">
-            <img src={image.imageUrl} alt={image.title} className="max-w-full h-auto" />
-            <p className="mt-2">{image.title}</p>
+            <div className="bg-grey rounded shadow p-5 mb-4">
+              <img src={image.imageUrl} alt={image.title} className="max-w-full h-auto mb-1" />
+              <p className="mt-2">{image.title}</p>
+            </div>
           </div>
         ))}
       </div>
