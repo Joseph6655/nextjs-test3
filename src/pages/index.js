@@ -6,6 +6,7 @@ import Footer from '@/comps/Footer';
 import Form from '@/comps/Form';
 import SectionImage from '@/comps/SectionImage';
 import Sectionradiobutton from '@/comps/Sectionradiobutton';
+import Filtercompenent from '@/comps/filtercomponent';
 
 const HomePage = () => {
   const imagesData = [
@@ -28,6 +29,7 @@ const HomePage = () => {
         ))}
       </div>
       <Sectionradiobutton/>
+      <Filtercompenent/>
       <Footer/>
     </div>
   );
