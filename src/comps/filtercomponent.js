@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 const Filtercompenent = () => {
   const imageData = [
-    { id: 1, title: 'Nature', imageUrl: 'comp.png' },
-    { id: 2, title: 'City', imageUrl: 'comp.png' },
-    { id: 3, title: 'Beach', imageUrl: 'comp.png' },
+    { id: 1, title: 'service 1', imageUrl: 'house.png' },
+    { id: 2, title: 'service 2', imageUrl: 'house.png' },
+    { id: 3, title: 'service 3', imageUrl: 'house.png' },
   ];
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -76,7 +76,9 @@ const Filtercompenent = () => {
         {filteredImages.map(image => (
           <div key={image.id} className="text-center">
             <div className="bg-grey rounded shadow p-5 mb-4">
-              <img src={image.imageUrl} alt={image.title} className="max-w-full h-auto mb-1" />
+              <div className="flex justify-center mb-1">
+                <img src={image.imageUrl} alt={image.title} className="max-w-full h-auto" />
+              </div>
               <p className="mt-2">{image.title}</p>
             </div>
           </div>
