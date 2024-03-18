@@ -14,25 +14,25 @@ const Sectionradiobutton = () => {
 
   return (
     <div className="flex justify-center items-center m-10 text-3xl ">
-      <div>
-        <div  className="font-bold">
-        <h2 >Select Your Interest :</h2>
+      <div className="bg-gray-100 p-8 rounded-lg shadow-md">
+        <div className="font-bold">
+          <h2 className="text-xl mb-4">Select Your Interest:</h2>
         </div>
         <form onSubmit={handleSubmit}>
-          <label className="block mb-2 mt-4 ml-4 ">
+          <label className="block mb-2">
             <input type="radio" name="interest" value="Front-end" onChange={handleInterestChange} />
-              Front-end
+              <span className="ml-2">Front-end</span>
           </label>
-          <label className="block mb-4 ml-4 ">
+          <label className="block mb-2">
             <input type="radio" name="interest" value="Back-end" onChange={handleInterestChange} />
-              Back-end
+              <span className="ml-2">Back-end</span>
           </label>
          
-          <button type="submit" className="bg-blue-500 mb-4 ml-2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button type="submit" className="bg-blue-500 mt-4 ml-2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Choose
           </button>
         </form>
-        {selectedInterest && <p>Your interest is in : {selectedInterest}</p>}
+        {selectedInterest && <p className="mt-4">Your interest is in: {selectedInterest}</p>}
       </div>
     </div>
   );
