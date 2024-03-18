@@ -35,7 +35,7 @@ const Filtercompenent = () => {
 
   return (
     <div className="container mx-auto relative">
-      <div className="flex justify-center items-center m-0">
+      <div className="flex justify-center items-center mb-2">
         <input
           type="text"
           placeholder="Search Images"
