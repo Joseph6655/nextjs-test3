@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+
+SwiperCore.use([Navigation, Pagination]);
 
 const Banner = ({ images, cardContent, textColor }) => {
+  const swiperRef = useRef(null);
+
+  const nextSlide = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const prevSlide = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
   const swiperParams = {
     loop: true,
     autoplay: {
@@ -13,13 +30,23 @@ const Banner = ({ images, cardContent, textColor }) => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <span>${index + 1}</span>
+          </span>`;
+      },
+    },
   };
 
   return (
     <section id="banner" className="py-16 bg-gray-100">
       <div className="content">
-        <Swiper {...swiperParams}>
-          {Array.isArray(images) && images.map((image, index) => (
+        <Swiper {...swiperParams} ref={swiperRef}>
+          {images.map((image, index) => (
             <SwiperSlide key={index}>
               <div className="banner-item relative">
                 <div className="image-container relative w-full">
@@ -34,6 +61,10 @@ const Banner = ({ images, cardContent, textColor }) => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="swiper-button-next" onClick={nextSlide}></div>
+        <div className="swiper-button-prev" onClick={prevSlide}></div>
+        
+        <div className="swiper-pagination"></div>
       </div>
     </section>
   );
