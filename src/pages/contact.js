@@ -20,7 +20,10 @@ const ContactPage = () => {
       <Head>
         <title>Contact page</title>
       </Head>
-      <Banner image={bannerImageSource} cardContent="Welcome to Contact page" />
+      <Banner 
+        images={['/contact.png', '/contactus2.jpg']}
+        cardContent="Welcome to Contact page" 
+      />
       <Form/>
       <div className="grid grid-cols-1 ml-20 mr-20 md:grid-cols-2 gap-0 md:w-1/2 justify-center md: " style={{margin: '0 auto'}}>
   {imagesData.map((data, index) => (
