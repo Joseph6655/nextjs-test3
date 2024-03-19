@@ -22,7 +22,7 @@ const HomePage = () => {
       <Head>
         <title>Home page</title>
       </Head>
-      {/* Add the Banner component with two additional images */}
+     
       <Banner 
         images={['/banner.png', '/banner1.png']}
         cardContent="Welcome to Home page" 
