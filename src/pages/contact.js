@@ -7,11 +7,11 @@ import SectionImage from '@/comps/SectionImage';
 import Form from '@/comps/Form';
 
 const ContactPage = () => {
+  const bannerImageSource = '/contact.png';
+
   const imagesData = [
     { imageSource: '/contactus1.jpg' , cardContent: 'You have within you, right now, everything you need to deal with whatever.' },
-    { imageSource: '/contact4.jpg' , cardContent: 'we have lost contact with reality the simplicity of life.' }
-   
-
+  { imageSource: '/contact4.jpg' , cardContent: 'we have lost contact with reality the simplicity of life.' }
   ];
 
   return (
@@ -20,7 +20,7 @@ const ContactPage = () => {
       <Head>
         <title>Contact page</title>
       </Head>
-      <Banner imageSource="/contact.png" cardContent="Welcome to Contact page" />
+      <Banner image={bannerImageSource} cardContent="Welcome to Contact page" />
       <Form/>
       <div className="grid grid-cols-1 ml-20 mr-20 md:grid-cols-2 gap-0 md:w-1/2 justify-center md: " style={{margin: '0 auto'}}>
   {imagesData.map((data, index) => (
