@@ -2,21 +2,19 @@ import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 const Banner = ({ images, cardContent, textColor }) => {
   const swiperRef = useRef(null);
 
   const swiperParams = {
-    modules: [Navigation, Pagination, Scrollbar, A11y],
+    modules: [Navigation, Pagination, A11y],
     spaceBetween: 50,
-    slidesPerView: 1, // Set slidesPerView to 1
+    slidesPerView: 1, 
     navigation: true,
     pagination: { clickable: true },
-    scrollbar: { draggable: true },
     onSwiper: (swiper) => console.log(swiper),
     onSlideChange: () => console.log('slide change'),
   };
@@ -39,6 +37,9 @@ const Banner = ({ images, cardContent, textColor }) => {
               </div>
             </SwiperSlide>
           ))}
+          <div className="swiper-button-prev bg-white"></div>
+          <div className="swiper-button-next bg-white"></div>
+          <div className="swiper-pagination-bullet bg-white"></div>
         </Swiper>
       </div>
     </section>
