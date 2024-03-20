@@ -24,7 +24,8 @@ const HomePage = () => {
       </Head>
      
       <Banner 
-        images={['/banner.png', '/banner1.png']}
+      
+        images={['/banner.png', '/banner1.png ']}
         cardContent="Welcome to Home page" 
       />
       <Form/> 

@@ -2,44 +2,23 @@ import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-
-SwiperCore.use([Navigation, Pagination]);
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Banner = ({ images, cardContent, textColor }) => {
   const swiperRef = useRef(null);
 
-  const nextSlide = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
-    }
-  };
-
-  const prevSlide = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
-
   const swiperParams = {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return `
-          <span class="${className}">
-            <span>${index + 1}</span>
-          </span>`;
-      },
-    },
+    modules: [Navigation, Pagination, Scrollbar, A11y],
+    spaceBetween: 50,
+    slidesPerView: 1, // Set slidesPerView to 1
+    navigation: true,
+    pagination: { clickable: true },
+    scrollbar: { draggable: true },
+    onSwiper: (swiper) => console.log(swiper),
+    onSlideChange: () => console.log('slide change'),
   };
 
   return (
@@ -61,10 +40,6 @@ const Banner = ({ images, cardContent, textColor }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="swiper-button-next" onClick={nextSlide}></div>
-        <div className="swiper-button-prev" onClick={prevSlide}></div>
-        
-        <div className="swiper-pagination"></div>
       </div>
     </section>
   );
