@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Filtercompenent = () => {
+const Filtercomponent = () => {
   const imageData = [
     { id: 1, title: 'service 1', imageUrl: 'house.png' },
     { id: 2, title: 'service 2', imageUrl: 'house.png' },
@@ -43,8 +43,8 @@ const Filtercompenent = () => {
   };
 
   return (
-    <div className="container mx-auto relative">
-      <div className="flex justify-center items-center mb-2">
+    <div className="container mx-auto p-1 flex flex-col items-center justify-center">
+      <div className="relative mb-4">
         <input
           type="text"
           placeholder="Search Images"
@@ -55,28 +55,19 @@ const Filtercompenent = () => {
           className="border border-gray-300 rounded px-4 py-2 mr-2"
           style={{ width: '310px' }}
         />
-      </div>
-      {showOptions && (
-        <div className="flex justify-center mb-2">
-          <div className="border border-gray-300 rounded bg-white" style={{ width: '300px' }}>
-            <div
-              className="px-4 py-2 cursor-pointer hover:bg-grey-100 font-bold"
-              onClick={() => handleTitleClick('All')}
-            >
+        {showOptions && (
+          <div className="absolute top-full left-0 mt-2 w-56 bg-white border border-gray-300 rounded shadow-md">
+            <div className="px-4 py-2 cursor-pointer hover:bg-grey-100 font-bold" onClick={() => handleTitleClick('All')}>
               All
             </div>
             {imageData.map((image) => (
-              <div
-                key={image.id}
-                className="px-4 py-2 cursor-pointer hover:bg-gray-100 font-bold"
-                onClick={() => handleTitleClick(image.title)}
-              >
+              <div key={image.id} className="px-4 py-2 cursor-pointer hover:bg-gray-100 font-bold" onClick={() => handleTitleClick(image.title)}>
                 {image.title}
               </div>
             ))}
           </div>
-        </div>
-      )}
+        )}
+      </div>
       <div className="grid grid-cols-3 gap-4">
         {filteredImages.map(image => (
           <div key={image.id} className="text-center">
@@ -102,4 +93,4 @@ const Filtercompenent = () => {
   );
 };
 
-export default Filtercompenent;
+export default Filtercomponent;

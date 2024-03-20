@@ -37,11 +37,9 @@ const Banner = ({ images, cardContent, textColor }) => {
               </div>
             </SwiperSlide>
           ))}
-          <div className="swiper-button-prev bg-white"></div>
-          <div className="swiper-button-next bg-white"></div>
-          <div className="swiper-pagination-bullet bg-white"></div>
         </Swiper>
       </div>
+
     </section>
   );
 };
