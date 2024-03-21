@@ -5,7 +5,14 @@
   box-sizing: border-box;
 }
 #banner {
-  display: contents;;
+  display: contents;
 }
-
-
+.swiper-button-next:after {
+  color:white;
+}
+.swiper-button-prev:after {
+  color: white;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: white;
+}
