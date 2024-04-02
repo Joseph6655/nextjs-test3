@@ -8,7 +8,7 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       {items.map((item, index) => (
         <div key={index} className="border border-gray-300 rounded">
           <div

@@ -44,7 +44,7 @@ const HomePage = () => {
         cardContent="Welcome to Home page" 
       />
       <Form/> 
-      <div className="container mx-auto p-4 text-center">
+      <div className="container mx-auto p-4 mt-4 text-center">
         <h1 className="text-2xl font-bold mb-4">Frequently asked questions</h1>
         <div className="mx-auto max-w-xl"> 
           <Accordion items={items} />
